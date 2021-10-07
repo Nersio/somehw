@@ -1,0 +1,46 @@
+.header__img {
+    display: block;
+    width: 50px;
+    margin-right: 15px;
+}
+
+.blue {
+    color: rgb(71, 214, 240);
+    text-decoration: none;
+}
+
+.size {
+    margin-bottom: 32px;
+}
+
+.row {
+    margin: 10px;
+}
+
+.col-3 {
+    margin-top: 20px;
+}
+
+.main__img {
+    width: 70px;
+}
+
+.link__main {
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+}
+
+.footer__img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.footer__link {
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.prity {
+    background-color: rgb(124, 195, 236);
+}

@@ -1,0 +1,265 @@
+/* hero */
+
+:root {
+    --color-blue: #3ca7d8;
+}
+
+.hero {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #F8F8F8;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    background-color: var(--color-blue);
+    border-radius: 50%;
+    display: block;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+}
+
+.hero__container {
+    justify-content: space-between;
+}
+
+.hero__container__left {
+    margin-top: 97px;
+    max-width: 624px;
+    width: 50%;
+}
+
+.hero__container__left__title {
+    font-weight: 900;
+    font-size: 36px;
+    color: #000000;
+    max-width: 323px;
+    margin: 0 0 12px;
+}
+
+.hero__container__left__text {
+    font-size: 20px;
+    margin: 0 0 42px;
+}
+
+.hero__container__left__btn {
+    padding: 23px 95px;
+}
+
+.hero__container__left__des {
+    color: #515151;
+    max-width: 242px;
+    margin: 40px 0 0;
+}
+
+.hero__container__left__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 624px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    grid-gap: 15px;
+}
+
+.hero__container__left__list__item {
+    align-items: center;
+}
+
+.hero__container__left__list__item:not(:last-child) {
+    position: relative;
+}
+
+.hero__container__left__list__item:not(:last-child)::before {
+    content: '';
+    width: 1px;
+    height: 75px;
+    background-color: #EEEEEE;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero__container__left__list__item__title {
+    font-weight: bold;
+    font-size: 72px;
+    margin: 0;
+}
+
+.hero__container__left__list__text {
+    margin: 0;
+}
+
+.hero__img {
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    transform: translatey(calc(-50% + 30px));
+    left: 52%;
+}
+
+
+/* /hero */
+
+
+/* product */
+
+.product {
+    padding: 114px 0 0;
+}
+
+.product__title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: .83;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.product__grid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 20px;
+}
+
+.card {
+    text-align: center;
+    transition: all .4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card:first-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.card:hover {
+    box-shadow: 0 10px 30px #d3F2F8;
+}
+
+.card__title {
+    max-width: 260px;
+    margin: 21px auto 0;
+}
+
+.card:first-child .card__title {
+    margin-top: 51px;
+}
+
+.product__contact {
+    margin-top: 65px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.product__contact__title,
+.product__contact__text {
+    margin: 0;
+}
+
+.product__contact__btn {
+    margin-left: 81px;
+}
+
+.product__men {
+    background-color: var(--color-blue);
+    padding: 90px 71px 66px;
+    margin: 154px 0;
+    position: relative;
+}
+
+.product__men__left {
+    color: white;
+    max-width: 490px;
+}
+
+.product__men__left__title {
+    font-size: 36px;
+    line-height: 1.02;
+    margin: 0 0 11px;
+}
+
+.product__men__left__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #D3E8E0;
+    margin: 0;
+}
+
+.product__men__left__btn {
+    margin-top: 17px;
+}
+
+.product__men__left__men {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.blocks {
+    background: var(--color-blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.blocks__title {
+    /* display: block; */
+    text-align: center;
+    margin: 0;
+    padding: 81px 0 43px;
+}
+
+.blocks__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.blocks__grid__item {
+    background: #fff;
+}
+
+.blocks__grid__item p {
+    margin: 0;
+    margin-left: 28px;
+}
+
+.blocks__grid__item__title {
+    font-size: 14px;
+    line-height: 30px;
+    color: #2F2F2F;
+    font-weight: 500;
+    padding-top: 18px;
+}
+
+.blocks__grid__item__text {
+    /* display: inline-block; */
+    font-size: 14px;
+    line-height: 25px;
+    color: #AFAFAF;
+    padding-bottom: 39px;
+}
+
+.blocks__grid__item__price {
+    font-size: 14px;
+    line-height: 25px;
+    color: #AE1A49;
+    padding-bottom: 35px;
+}
+
+
+/* /product */
